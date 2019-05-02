@@ -16,7 +16,10 @@ use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
- * @ApiResource
+ * @ApiResource(
+ *     collectionOperations={"get"},
+ *     itemOperations={"get"}
+ *     )
  * @ORM\Entity(repositoryClass="App\Repository\JourneyRepository")
  */
 class Journey
